@@ -1,0 +1,163 @@
+/* linkar com google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+
+/* reset css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* criacao de variaveis para defnicao de cor para todos os textos */
+:root {
+  --text-color: #fff;
+  --text-hover: #dc143c;
+  --bg-primary: #009;
+  --mb: 50px;
+  --mt: 50px;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+ul,
+ol {
+  /* marcador e/ou numerador de listas */
+  list-style: none;
+}
+
+a {
+  /* tirando o sublinhado */
+  text-decoration: none;
+  /* todas as letras em maiusculo */
+  text-transform: uppercase;
+  /* cor do texto */
+  color: #fff;
+  /* peso da fonte */
+  font-weight: 500;
+}
+
+/* formatacao header page */
+
+.header-page {
+  width: 100%;
+  min-height: 80px;
+  /* background-color: #000; */
+  color: #fff;
+  display: flex;
+
+  /* alinhamento vertical */
+  align-items: center;
+
+  /* alinhamento horizontal */
+  justify-content: space-around;
+
+  /* quebra do conteúdo - não coube ele tenta arrumar*/
+  flex-wrap: wrap;
+
+  /* espaçamento para não deixar grudado nas margens */
+  padding: 0 20px;
+
+  position: absolute;
+}
+
+.header-page-menu ul {
+  display: flex;
+}
+
+.header-page-menu li {
+  margin: 0 10px;
+}
+
+.header-page-menu a {
+  font-size: 15px;
+  transition: 0.5s;
+}
+
+.header-page-menu a:hover {
+  color: var(--text-hover);
+}
+
+/* fim formatacao header page */
+
+/* hero */
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 8), rgba(0, 0, 0)),
+    url(../images/pexels-felix-mittermeier-957002.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-color);
+}
+
+.hero-title {
+  margin-bottom: var(--mb);
+  margin-top: var(--mt);
+  font-size: 8vmin;
+  text-align: center;
+  font-weight: 900;
+  padding: 0 10px;
+}
+
+.hero-subtitle {
+  margin-bottom: var(--mb);
+  font-size: 5vmin;
+  text-align: center;
+  font-weight: 700;
+}
+
+.btn {
+  border: 1px solid var(--text-hover);
+  background-color: var(--text-hover);
+  padding: 7px 20px;
+  border-radius: 70px;
+  /* font-size: 3vmin; */
+  transition: 0.5s;
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: var(--text-hover);
+}
+/* fim hero */
+
+/* tour */
+
+.tour {
+  width: 80%;
+  height: 200vh;
+  /* background-color: #ccc; */
+  margin: 80px auto;
+}
+
+.tour-list {
+  width: 100%;
+  display: flex;
+}
+
+.tour-list-item {
+  width: 45%;
+}
+
+.tour-list-item img {
+  width: 80%;
+}
+
+.tour-list-item h2 {
+  margin: 30px 0;
+  font-size: 3vmin;
+}
+
+.tour-list-item p {
+  margin: 20px 0 30px;
+  /* font-size: 2.5vmin; */
+}
+/* fim tour */
