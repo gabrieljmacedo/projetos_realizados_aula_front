@@ -1,0 +1,8 @@
+.bg-fiap {
+  background-color: black;
+}
+
+textarea{
+    resize: none;
+    height: 150px;
+}
